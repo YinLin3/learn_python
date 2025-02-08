@@ -4,8 +4,9 @@ class contar:
 
     def __str__(self):
         longitud = len(self.palabra)
-        return "hola"
+        return "string bby"
 
 # Ejemplo de uso
 objeto = contar("Hola")
-print(objeto)
+print(objeto.palabra)
+print(objeto.__str__())
