@@ -1,8 +1,10 @@
 ''' 3 formas de importar
-import (modulo)
-from (modulo) import (...)
+1.import (modulo)
+
+2.from (modulo) import (...)
     -from (modulo) import (...) as (...)
-import (modulo) as (...)
+    
+3.import (modulo) as (...)
     -import (modulo) as *
 '''
 import my_modules as mm
