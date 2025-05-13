@@ -2,11 +2,11 @@ class contar:
     def __init__(self, palabra):
         self.palabra = palabra
 
-    def __str__(self):
+    def __len__(self):
         longitud = len(self.palabra)
-        return "string bby"
+        return longitud
 
 # Ejemplo de uso
 objeto = contar("Hola")
 print(objeto.palabra)
-print(objeto.__str__())
+print(objeto.__len__())

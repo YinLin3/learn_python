@@ -19,10 +19,10 @@ class deco:
 
     # decorador para funciones con parametros
     def multiplicador(func):
-        def decorador3(*args,**kwargs):
-            print("hola :P")
+        def decorador3(a,b):
+            print("hola "*a)
             func()
-            print("adios :(")
+            print("adios "*b+"\n")
         return decorador3
     
     @multiplicador
@@ -41,5 +41,5 @@ class deco:
     def saludar3():
         return "hola bro3"
 deco.saludar1()
-deco.saludar2()
+deco.saludar2(3,4)
 print(deco.saludar3())

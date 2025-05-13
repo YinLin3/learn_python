@@ -52,12 +52,12 @@ class nose:
     def multiplicar(numero:int,multiplicador:int):
         return numero*multiplicador
 
-    # @overload
+    # @overload | indica que existen 2 funciones iguales pueden recibir diferentes parametros
     @overload
-    def cumpleaños(self,dia:int,mes:str,año:int) -> str: pass
-    
-    def cumpleaños(self,dia,mes,año):
-        return f"tu cumpleaños es el {dia} de {mes} del {año}"
+    def verificar(self,id:int) -> str:
+        return f"veamos si #{id} esta en el sistema"
+    def verificar(self,usuario:str)->str:
+        return f"veamos si {usuario} esta en el sistema"
 
 
 
@@ -71,4 +71,4 @@ print(a.bocaditos)
 a.bocaditos=500
 print(a.bocaditos)
 print(nose.multiplicar(3,6))
-print(a.cumpleaños(3,"marzo",2008))
+print(a.verificar(48))
